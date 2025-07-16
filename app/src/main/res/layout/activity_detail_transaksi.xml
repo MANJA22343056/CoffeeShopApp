@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgproses"
+    tools:context=".DetailTransaksiActivity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Detail Transaksi"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:text="Total Harga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:text="Pembayaran"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:text="Kembalian"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:text="Metode Pembayaran"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:text=":"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/black"
+        android:text=":"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/black"
+        android:text=":"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/black"
+        android:text=":"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textTotalHargaDetailTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textPembayaranDetailTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textKembaianDetailTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textMetodePembayaranDetailTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:text="Produk :"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewDetailTransaksi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCetakTransaksi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_detail_produk" />
+
+    <Button
+        android:id="@+id/buttonCetakTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Cetak Transaksi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/coffee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
